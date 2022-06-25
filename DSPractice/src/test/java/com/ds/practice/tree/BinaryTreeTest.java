@@ -6,6 +6,7 @@ import org.junit.Test;
 
 public class BinaryTreeTest {
 	
+	
 	@Test
 	public void simpleBinaryTree() {
 		BinaryTree tree = new BinaryTree(1);
