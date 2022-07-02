@@ -61,4 +61,20 @@ public class LinkedList {
 		printReverseRec(head.next);
 		System.out.print(head.data + " ");
 	}
+	
+	public void deleteGivenItem(int item) {
+		if(head == null)
+			return;
+		if(head.data == item) {
+			head = head.next;
+			return;
+		}
+		Node temp = head;
+		while(temp != null && temp.data != item) {
+			temp = temp.next;
+		}
+		if(temp != null) {
+			temp = temp.next;
+		}
+	}
 }
